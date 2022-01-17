@@ -3,8 +3,6 @@ from math import cos, acos, sqrt, pi, sin, asin
 R = 6371001
 r0 = 25
 point = ['60.051584', '30.300509']
-# y0=(float(point[0][0:2])+float(point[0][2:])/60)*pi/180 #широта  Lat
-# u0=(float(point[1][0:2])+float(point[1][2:])/60)*pi/180 #долгота Lon
 y0 = float(point[0]) * pi / 180  # широта  Lat
 u0 = float(point[1]) * pi / 180  # долгота Lon
 f = open('nmea.log', 'r')
